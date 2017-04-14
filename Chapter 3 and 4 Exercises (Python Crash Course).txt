@@ -1,0 +1,126 @@
+# 3.4 - Guest List
+guestList = ['Saad','Osama','Sohaib','Abdul']
+
+for i in guestList:
+   print ('ASA \n Mr. '+i+', you are invited for dinner at my house on sat night. \nThank you !')
+   print('-------------------------------------------------------')
+
+# 3.5 - Chnaging Guest List
+guestList = ['Saad','Osama','Sohaib','Abdul']
+print('Osama')
+guestList.insert(guestList.index('Osama'),'Pasha')
+guestList.remove('Osama')
+for i in guestList:
+   print ('ASA \n Mr. '+i+', you are invited for dinner at my house on sat night. \nThank you !')
+   print('-------------------------------------------------------')
+
+
+#  3.6 More Guests
+guestList = ['Saad','Osama','Sohaib']
+print('I found a bigger dinner table')
+guestList.insert(0,'Faiq')
+guestList.insert((len(guestList)/2).__int__(),'Aqeel')
+guestList.append('Harris')
+for i in guestList:
+   print ('ASA \n Mr. '+i+', you are invited for dinner at my house on sat night. \nThank you !')
+   print('-------------------------------------------------------')
+
+# 3.6 Shrinking Guest List
+guestList = ['Saad','Osama','Sohaib','Faiq']
+print('I can invite only 2 people for dinner')
+while(len(guestList)>2):
+    a = guestList.pop()
+    print('Sorry Mr. '+ a + ' I can not invite you to dinner')
+
+for i in guestList:
+   print ('ASA \n Mr. '+i+', you are invited for dinner at my house on sat night. \nThank you !')
+   print('-------------------------------------------------------')
+
+for i in guestList:
+    del guestList[0:]
+
+if(len(guestList)==0):
+    print('List is empty')
+
+# 3.8 - Seeing the world
+places = ['Makkah','Madina','Rome','Italy','Serbia']
+print(places)
+print(sorted(places))
+print(places)
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+places.sort()
+print(places)
+places.sort(reverse=True)
+print(places)
+
+#  3.9 Dinner Guests
+guestList = ['Saad','Osama','Sohaib','Faiq']
+print('Number of guests invited for dinner are:',len(guestList))
+
+#  3.10 Every Function
+myList = ['Saad', 'Osama', 'Sohaib', 'Faiq']
+myList.reverse()
+myList.sort()
+str(myList)
+myList.remove('Faiq')
+myList.pop()
+del myList[0]
+myList.insert(0, 'Pasha')
+
+# 4-10 Slices
+myList = ['hotdog', 'Drink', 'Cake', 'Bread', 'Ice cream', 'Sandwich']
+print("First 3 elements in the list are:")
+print(myList[:3])
+print("3 elements from the middle of the list are:")
+listLength = len(myList)
+if listLength % 2 == 0:
+    print(myList[int(listLength / 2 - 1.5):int(listLength / 2 + 1.5)])
+else:
+    print(myList[int(listLength / 2 - 1.5):int(listLength / 2 + 1.5)])
+print("last 3 elements in the list are:")
+print(myList[-3:])
+
+# 4-11 My Pizzas, Your Pizzas
+pizzas = ["Chicken Tikka", "Italian Crust", "Afghani Pizza"]
+friend_pizzas = pizzas[:]
+pizzas.insert(0, 'Fajita')
+friend_pizzas.insert(0, 'Chicken Golden')
+if pizzas == friend_pizzas:
+    print("Both lists are same.")
+else:
+    print("Both lists are not same")
+
+print("My favorite pizzas are:")
+for pizza in pizzas:
+    print(pizza)
+
+print("My friend’s favorite pizzas are")
+for friend_pizza in friend_pizzas:
+    print(friend_pizza)
+
+#  4-12 More Loops
+pizza = ["Chicken Tikka", "Italian Crust", "Afghani Pizza"]
+food = ['hotdog', 'Drink', 'Cake', 'Bread', 'Ice cream', 'Sandwich']
+
+print("Pizzas are:")
+for pizza in pizza:
+    print(pizza)
+
+print("Foods are")
+for food in food:
+    print(food)
+
+# 4-13 Buffet
+food = ('hotdog', 'Drink', 'Cake', 'Bread', 'Ice cream', 'Sandwich')
+print("Foods are")
+for food in food:
+    print(food)
+# food.insert(0, "New Food")
+
+foods = ("Chips", "Ice Cream", 'Cake', 'Bread', "Juice")
+print("Foods are")
+for food in foods:
+    print(food)
