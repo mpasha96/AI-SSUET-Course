@@ -1,0 +1,81 @@
+# # 8-3 Tshirt
+# def make_shirt(size,text):
+#     print('T-shirt with text \"'+text+'\" and size \"'+size+'\" ready')
+#
+# make_shirt("medium","hello world")
+# make_shirt(text="mukarram",size="medium")
+
+# # 8-4 Large Shirts
+# def make_shirt(size="large",text="I love python"):
+#     print('T-shirt with text \"'+text+'\" and size \"'+size+'\" ready')
+# make_shirt()
+# make_shirt(size="medium")
+# make_shirt(text="test message")
+
+# # 8-5 Cities
+# def describe_city(cityName,country="Pakistan"):
+#     print(cityName+' is in '+country)
+#
+# describe_city('Karachi')
+# describe_city('Lahore')
+# describe_city('New York','USA')
+
+# # 8-12 Sandwiches
+# def sandwiches(*items):
+#     print('your sandwich has: ',items)
+# sandwiches('chicken','cheese','garlic')
+# sandwiches('beef','cheese','garlic')
+# sandwiches('Fish','cheese','garlic')
+
+# 8-13 User Profile
+# def build_profile(first, last, **user_info):
+#     profile = {}
+#     profile['first_name'] = first
+#     profile['last_name'] = last
+#     for key, value in user_info.items():
+#         profile[key] = value
+#     return profile
+# user_profile = build_profile('Mukarram', 'Pasha',
+#                              Occupation='Student',
+#                              Location='Karachi',
+#                              Field='Computer Science')
+# print(user_profile)
+
+# # 8-14 Cars
+# def cars(manufacturere, model, **other_info):
+#     car = {}
+#     car['Manufacturere'] = manufacturere
+#     car['Model'] = model
+#     for key, value in other_info.items():
+#         car[key] = value
+#     return car
+# Car = cars('Subaru', 'Outback',
+#                              Color='Student',
+#                              Two_Package=True)
+# print(Car)
+
+# 8-15 Printing Models
+# # printing fucntions.py file
+# def print_models(models):
+#     print(models)
+#
+# # second file code
+# import printing_functions as p
+# p.print_models('xyz')
+
+#  8-16imports
+#
+# import printing fucntions
+# printing fucntions.print_models('xya')
+#
+# from printing fucntions import print_models
+# print_models('sdsad')
+#
+# from printing fucntions import print_models as pm
+# pm('sda')
+#
+# import printing fucntions as pf
+# pf.print_models('asd')
+#
+# from printing fucntions import *
+# print_models('rtr')
