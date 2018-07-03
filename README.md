@@ -1,1 +1,1 @@
-# SSUET-AI-Deep-Learning-Course
+# SSUET-AI-Course
